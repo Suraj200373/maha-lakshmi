@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SRI MAHALAKSHMI IYYANGAR BAKERY</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #014421;
+      color: white;
+    }
+
+    header {
+      background-color: #022e1a;
+      padding: 20px;
+      text-align: center;
+      position: relative;
+    }
+
+    header img {
+      height: 80px;
+    }
+
+    header h1 {
+      margin: 10px 0 0;
+      font-size: 32px;
+    }
+
+    .owner-info {
+      position: absolute;
+      top: 10px;
+      left: 20px;
+      text-align: left;
+      font-size: 14px;
+    }
+
+    marquee {
+      background: #028c47;
+      padding: 10px;
+      font-weight: bold;
+    }
+
+    .products {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+      gap: 20px;
+      padding: 40px;
+    }
+
+    .product {
+      background-color: #035f2a;
+      border-radius: 10px;
+      padding: 20px;
+      text-align: center;
+      transition: transform 0.3s;
+    }
+
+    .product:hover {
+      transform: scale(1.05);
+    }
+
+    .product img {
+      max-width: 100%;
+      border-radius: 10px;
+      height: 150px;
+      object-fit: cover;
+    }
+
+    .product h3 {
+      margin: 10px 0 5px;
+    }
+
+    /* Floating boxes */
+    .special-offer,
+    .call-now,
+    .whatsapp-button {
+      position: fixed;
+      right: 20px;
+      border-radius: 10px;
+      color: white;
+      text-align: center;
+      font-weight: bold;
+      text-decoration: none;
+      padding: 10px 15px;
+      box-shadow: 0 0 10px black;
+    }
+
+    .special-offer {
+      bottom: 20px;
+      background-color: #f8b400;
+      color: black;
+    }
+
+    .call-now {
+      bottom: 80px;
+      background: #25d366;
+    }
+
+    .whatsapp-button {
+      bottom: 140px;
+      background: #128c7e;
+    }
+
+    .language-toggle {
+      position: fixed;
+      top: 20px;
+      right: 20px;
+      padding: 5px;
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <div class="owner-info">
+      <strong>Owner:</strong> Krishnan Erulappan<br />
+      <strong>Address:</strong><br />
+      18/5,18/6, Salem Main Road,<br />
+      Thiyagadurugam, Viluppuram,<br />
+      Tamil Nadu - 606206<br />
+      <strong>Phone:</strong> 9751709837
+    </div>
+    <img src="logo.png" alt="SRI MAHALAKSHMI IYYANGAR BAKERY Logo" />
+    <h1>SRI MAHALAKSHMI IYYANGAR BAKERY</h1>
+  </header>
+
+  <marquee>Welcome to Sri Mahalakshmi Iyyangar Bakery – Taste the Tradition, Baked with Love!</marquee>
+
+  <section class="products">
+    <div class="product" data-en-name="Laddu" data-ta-name="லட்டு">
+      <img src="product1.jpg" alt="Laddu" />
+      <h3 class="product-name">Laddu</h3>
+      <p>Sweeten Every Celebration with Our Laddus</p>
+    </div>
+    <div class="product" data-en-name="Rasgulla" data-ta-name="ரச்குலா">
+      <img src="product2.jpg" alt="Rasgulla" />
+      <h3 class="product-name">Rasgulla</h3>
+      <p>Soft, Spongy, and Soaked in Tradition</p>
+    </div>
+    <div class="product" data-en-name="Murukku" data-ta-name="முருக்கு">
+      <img src="product3.jpg" alt="Murukku" />
+      <h3 class="product-name">Murukku</h3>
+      <p>Crispy Bites, Timeless Delights</p>
+    </div>
+    <div class="product" data-en-name="Cakes" data-ta-name=" கேக்">
+      <img src="product4.jpg" alt="Cakes" />
+      <h3 class="product-name">Cakes</h3>
+      <p>Baked with Love, Frosted with Joy</p>
+    </div>
+    <div class="product" data-en-name="Jangiri" data-ta-name="ஜாங்கிரி">
+      <img src="product5.jpg" alt="Jangiri" />
+      <h3 class="product-name">Jangiri</h3>
+      <p>A Swirl of Sweet Tradition</p>
+    </div>
+    <div class="product" data-en-name="Rusk" data-ta-name="ரஸ்க்">
+      <img src="product6.jpg" alt="Rusk" />
+      <h3 class="product-name">Rusk</h3>
+      <p>Crispy and crunchy tea-time delight</p>
+    </div>
+    <div class="product" data-en-name="Butter Biscuit" data-ta-name="பட்டர் பிஸ்கட்">
+      <img src="product7.jpg" alt="Butter Biscuit" />
+      <h3 class="product-name">Butter Biscuit</h3>
+      <p>Rich buttery flavor in every bite</p>
+    </div>
+    <div class="product" data-en-name="Sweet Bun" data-ta-name="இனிப்பு பணியாரம்">
+      <img src="product8.jpg" alt="Sweet Bun" />
+      <h3 class="product-name">Sweet Bun</h3>
+      <p>Soft bun with sweet topping</p>
+    </div>
+    <div class="product" data-en-name="Fruit Cake" data-ta-name="பழக் கேக்">
+      <img src="product9.jpg" alt="Fruit Cake" />
+      <h3 class="product-name">Fruit Cake</h3>
+      <p>Moist cake loaded with dry fruits</p>
+    </div>
+    <div class="product" data-en-name="Jeera Biscuit" data-ta-name="ஜீரா பிஸ்கட்">
+      <img src="product10.jpg" alt="Jeera Biscuit" />
+      <h3 class="product-name">Jeera Biscuit</h3>
+      <p>Savory cumin flavored crunchy biscuit</p>
+    </div>
+    <div class="product" data-en-name="Black Forest" data-ta-name="பிளாக் ஃபோரஸ்ட்">
+      <img src="product11.jpg" alt="Black Forest" />
+      <h3 class="product-name">Black Forest</h3>
+      <p>A Slice of Decadence</p>
+    </div>
+    <div class="product" data-en-name="Mixture" data-ta-name="மிக்சர்">
+      <img src="product12.jpg" alt="Mixture" />
+      <h3 class="product-name">Mixture</h3>
+      <p>Homemade Taste, Street-Style Crunch</p>
+    </div>
+    <div class="product" data-en-name="Butter Murukku" data-ta-name="பட்டர் முருக்கு">
+      <img src="product13.jpg" alt="Butter Murukku" />
+      <h3 class="product-name">Butter Murukku</h3>
+      <p>Deliciously soft and crispy snack</p>
+    </div>
+    <div class="product" data-en-name="Khara Bun" data-ta-name="காரா பண்">
+      <img src="product14.jpg" alt="Khara Bun" />
+      <h3 class="product-name">Khara Bun</h3>
+      <p>Spicy bun with masala filling</p>
+    </div>
+    <div class="product" data-en-name="Kaju Katli" data-ta-name="காஜு கட்டிலி">
+      <img src="product15.jpg" alt="Kaju Katli" />
+      <h3 class="product-name">Kaju Katli</h3>
+      <p>Soft cashew sweet for every celebration</p>
+    </div>
+    <div class="product" data-en-name="Omapodi" data-ta-name="ஓமப்பொடி">
+      <img src="product16.jpg" alt="Omapodi" />
+      <h3 class="product-name">Omapodi</h3>
+      <p>Light, crunchy, and flavored with ajwain</p>
+    </div>
+    <div class="product" data-en-name="Mysore Pak" data-ta-name="மைசூர் பாக்">
+      <img src="product17.jpg" alt="Mysore Pak" />
+      <h3 class="product-name">Mysore Pak</h3>
+      <p>Rich ghee sweet with traditional taste</p>
+    </div>
+    <div class="product" data-en-name="Karasev" data-ta-name="காரசேவ்">
+      <img src="product18.jpg" alt="Karasev" />
+      <h3 class="product-name">Karasev</h3>
+      <p>Crunchy spicy snack with pepper punch</p>
+    </div>
+    <div class="product" data-en-name="Soan Papdi" data-ta-name="சோன் பப்டி">
+      <img src="product19.jpg" alt="Soan Papdi" />
+      <h3 class="product-name">Soan Papdi</h3>
+      <p>Flaky, sweet, and melt-in-mouth delight</p>
+    </div>
+    <div class="product" data-en-name="Gulab Jamun" data-ta-name="குலாப் ஜாமூன்">
+      <img src="product20.jpg" alt="Gulab Jamun" />
+      <h3 class="product-name">Gulab Jamun</h3>
+      <p>Soft milk balls soaked in syrup</p>
+    </div>
+    <div class="product" data-en-name="Kara Boondi" data-ta-name="காரா பூந்தி">
+      <img src="product21.jpg" alt="Kara Boondi" />
+      <h3 class="product-name">Kara Boondi</h3>
+      <p>Spiced boondi with a crispy crunch</p>
+    </div>
+    <div class="product" data-en-name="Thattai" data-ta-name="த்தட்டை">
+      <img src="product22.jpg" alt="Thattai" />
+      <h3 class="product-name">Thattai</h3>
+      <p>Crispy rice flour snack with flavors</p>
+    </div>
+    <div class="product" data-en-name="Ribbon Pakoda" data-ta-name="ரிபன் பகோடா">
+      <img src="product23.jpg" alt="Ribbon Pakoda" />
+      <h3 class="product-name">Ribbon Pakoda</h3>
+      <p>Ribbon-shaped spicy crunchy snack</p>
+    </div>
+    <div class="product" data-en-name="Banana Chips" data-ta-name="வாழைக்காய் சிப்ஸ்">
+      <img src="product24.jpg" alt="Banana Chips" />
+      <h3 class="product-name">Banana Chips</h3>
+      <p>Golden crispy banana slices</p>
+    </div>
+    <div class="product" data-en-name="Cashew Burfi" data-ta-name="முந்திரி பர்ஃபி">
+      <img src="product25.jpg" alt="Cashew Burfi" />
+      <h3 class="product-name">Cashew Burfi</h3>
+      <p>Rich and creamy nut sweet</p>
+    </div>
+    <div class="product" data-en-name="Dates Roll" data-ta-name="பேரிச்சம்பழ ரோல்">
+      <img src="product26.jpg" alt="Dates Roll" />
+      <h3 class="product-name">Dates Roll</h3>
+      <p>Healthy sweet with dry fruits</p>
+    </div>
+    <div class="product" data-en-name="Chocolate Cake" data-ta-name="சாக்லேட் கேக்">
+      <img src="product27.jpg" alt="Chocolate Cake" />
+      <h3 class="product-name">Chocolate Cake</h3>
+      <p>Rich, dark, and full of flavor</p>
+    </div>
+    <div class="product" data-en-name="Milk Sweet" data-ta-name="பால் மிட்டாய்">
+      <img src="product28.jpg" alt="Milk Sweet" />
+      <h3 class="product-name">Milk Sweet</h3>
+      <p>Soft and creamy milk dessert</p>
+    </div>
+    <div class="product" data-en-name="Kara Bun" data-ta-name="காரா பண்">
+      <img src="product29.jpg" alt="Kara Bun" />
+      <h3 class="product-name">Kara Bun</h3>
+      <p>Perfectly spicy snack bun</p>
+    </div>
+    <div class="product" data-en-name="Bread Halwa" data-ta-name="ப்ரெட் ஹல்வா">
+      <img src="product30.jpg" alt="Bread Halwa" />
+      <h3 class="product-name">Bread Halwa</h3>
+      <p>Warm and rich halwa with bread base</p>
+    </div>
+    <div class="product" data-en-name="Dry Fruit Laddu" data-ta-name="உலர் பழ லட்டு">
+      <img src="product31.jpg" alt="Dry Fruit Laddu" />
+      <h3 class="product-name">Dry Fruit Laddu</h3>
+      <p>Nutritious and flavorful sweet ball</p>
+    </div>
+    <div class="product" data-en-name="Rava Laddu" data-ta-name="ரவா லட்டு">
+      <img src="product32.jpg" alt="Rava Laddu" />
+      <h3 class="product-name">Rava Laddu</h3>
+      <p>Simple, soft semolina sweet</p>
+    </div>
+    <div class="product" data-en-name="Honey Cake" data-ta-name="தேன் கேக்">
+      <img src="product33.jpg" alt="Honey Cake" />
+      <h3 class="product-name">Honey Cake</h3>
+      <p>Moist sponge cake with honey glaze</p>
+    </div>
+    <div class="product" data-en-name="Eggless Cake" data-ta-name="முட்டையில்லாத கேக்">
+      <img src="product34.jpg" alt="Eggless Cake" />
+      <h3 class="product-name">Eggless Cake</h3>
+      <p>Soft and fluffy egg-free treat</p>
+    </div>
+    <div class="product" data-en-name="Badusha" data-ta-name="பாதுஷா">
+      <img src="product35.jpg" alt="Badusha" />
+      <h3 class="product-name">Badusha</h3>
+      <p>Sweet, flaky, and melt-in-mouth</p>
+    </div>
+    <div class="product" data-en-name="Sweet Seedai" data-ta-name="இனிப்பு சீடை">
+      <img src="product36.jpg" alt="Sweet Seedai" />
+      <h3 class="product-name">Sweet Seedai</h3>
+      <p>Small crunchy balls soaked in jaggery</p>
+    </div>
+    <div class="product" data-en-name="Kalkandu" data-ta-name="கல்கண்டு">
+      <img src="product37.jpg" alt="Kalkandu" />
+      <h3 class="product-name">Kalkandu</h3>
+      <p>Rock sugar treat with flavor</p>
+    </div>
+    <div class="product" data-en-name="Ellu Urundai" data-ta-name="எள்ளு உருண்டை">
+      <img src="product38.jpg" alt="Ellu Urundai" />
+      <h3 class="product-name">Ellu Urundai</h3>
+      <p>Sesame seed sweet balls</p>
+    </div>
+    <div class="product" data-en-name="Aval Urundai" data-ta-name="அவல் உருண்டை">
+      <img src="product39.jpg" alt="Aval Urundai" />
+      <h3 class="product-name">Aval Urundai</h3>
+      <p>Poha-based traditional sweet</p>
+    </div>
+    <div class="product" data-en-name="Coconut Burfi" data-ta-name="தேங்காய் பர்ஃபி">
+      <img src="product40.jpg" alt="Coconut Burfi" />
+      <h3 class="product-name">Coconut Burfi</h3>
+      <p>Delightfully sweet with real
+
+  </section>
+
+  <!-- Floating Boxes -->
+  <div class="special-offer">🔥 Today's Special: Fresh Jangiri – ₹30 only!</div>
+  <a class="call-now" href="tel:9751709837">📞 Call Now</a>
+  <a class="whatsapp-button" href="https://wa.me/919751709837" target="_blank">💬 WhatsApp Us</a>
+
+  <!-- Language Toggle -->
+  <select class="language-toggle" onchange="changeLanguage(this)">
+    <option value="en">English</option>
+    <option value="ta">தமிழ்</option>
+  </select>
+
+  <script>
+    function changeLanguage(select) {
+      const lang = select.value;
+      const products = document.querySelectorAll('.product');
+
+      products.forEach((product) => {
+        const productName = product.querySelector('.product-name');
+        const productEnName = product.getAttribute('data-en-name');
+        const productTaName = product.getAttribute('data-ta-name');
+
+        if (lang === 'en') {
+          productName.textContent = productEnName;
+        } else if (lang === 'ta') {
+          productName.textContent = productTaName;
+        }
+      });
+    }
+  </script>
+</body>
+
+</html>
+
+
+
+
